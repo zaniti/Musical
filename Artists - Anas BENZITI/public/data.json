@@ -1,0 +1,44 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Ed Sheeran",
+      "lastalbum": "Divide",
+      "title": "Pop artist of the year",
+      "description": "Wallflower debuted at number two on the Canadian Albums Chart, selling 13,000 copies in its first week. In the United States, it entered the Billboard 200 at number ten with first-week sales of 44,000 copies, becoming Krall's...",
+      "img": "img/ed.jfif"
+    },
+    {
+      "id": 2,
+      "name": "Ed Sheeran",
+      "lastalbum": "Divide",
+      "title": "Pop artist of the year",
+      "description": "Wallflower debuted at number two on the Canadian Albums Chart, selling 13,000 copies in its first week. In the United States, it entered the Billboard 200 at number ten with first-week sales of 44,000 copies, becoming Krall's...",
+      "img": "img/ed.jfif"
+    },
+    {
+      "id": 3,
+      "name": "Ed Sheeran",
+      "lastalbum": "Divide",
+      "title": "Pop artist of the year",
+      "description": "Wallflower debuted at number two on the Canadian Albums Chart, selling 13,000 copies in its first week. In the United States, it entered the Billboard 200 at number ten with first-week sales of 44,000 copies, becoming Krall's...",
+      "img": "img/ed.jfif"
+    },
+    {
+      "id": 4,
+      "name": "little ",
+      "lastalbum": "groom",
+      "title": "standout pop rockstar",
+      "description": "very talented and cute singer",
+      "img": "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "zef",
+      "lastalbum": "divide",
+      "title": "pop rockstar",
+      "description": "beautiful",
+      "img": "https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg"
+    }
+  ]
+}
