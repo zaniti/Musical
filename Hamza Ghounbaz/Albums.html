@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/albums.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a6cfec0f45.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <header class="col">
+        <div class="mx-auto" style="width: 600px;">
+          <img src="img/logo.png" alt="" width="50px;">
+          <h1>MUSIC PARADISE</h1>
+          <p>we open the new music for you</p>
+          <ul class="topmenu">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="track.html">MUSIC</a></li>
+            <li><a href="#">LISTEN</a></li>
+            <li><a href="#">CHARTS</a></li>
+            <li><a href="#">EVENTS</a></li>
+          </ul>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bars"></i></button>
+            <div class="dropdown-menu dropdown-menu-right">
+              <button class="dropdown-item" type="button">HOME</button>
+              <button class="dropdown-item" type="button">MUSIC</button>
+              <button class="dropdown-item" type="button">LISTEN</button>
+              <button class="dropdown-item" type="button">CHARTS</button>
+              <button class="dropdown-item" type="button">EVENTS</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End of header -->
+       <!-- Start of Contenu -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="albums">
+              <h1> Albums </h1>
+              <hr>
+              <p> B E S T &nbsp;&nbsp;&nbsp;&nbsp; A L B U M S &nbsp;&nbsp;&nbsp;&nbsp; O F &nbsp;&nbsp;&nbsp;&nbsp;  Y E A R  </p>
+            </div>
+            </div>
+        </div>
+      </div>
+          <!-- Contenu -->
+          <div id="setalbum" class="row">
+
+            <script type="text/javascript">
+    
+            var myRequest = new XMLHttpRequest();
+            var result = document.getElementById('setalbum');
+    
+            myRequest.onreadystatechange = function(){
+                if(this.readyState === 4 && this.status === 200){
+                    var myJsObject = JSON.parse(this.responseText);
+    
+                    for (var j =0 ; j < myJsObject.albums.length; j++){
+    
+                    var div1 = document.createElement('div');
+                    var div2 = document.createElement('div');
+                    var div3 = document.createElement('div');
+                    var img = document.createElement('img');
+                    var p = document.createElement('p');
+                    var h1 = document.createElement('h1');
+                    var divbtn = document.createElement('div');
+                    var btn = document.createElement('button'); 
+
+                    
+
+
+                    div1.className = "col-md-3";
+                    div2.className = "albums2";
+                    div3.className = "singer";
+                    img.setAttribute("src",myJsObject.albums[j].image);                  
+                    divbtn.className = "btn";
+                    btn.setAttribute("type", "button");
+                    btn.className = "btn btn-primary";
+    
+    
+    
+                    p.innerHTML = myJsObject.albums[j].name;
+                    h1.innerHTML = myJsObject.albums[j].album;
+                    btn.innerHTML = "Listen now";
+    
+                    divbtn.appendChild(btn);
+                    div3.appendChild(img);
+                    div3.appendChild(p);
+                    div3.appendChild(h1);
+                    div2.appendChild(div3);
+                    div1.appendChild(div2);
+                    div1.appendChild(divbtn);
+                  
+    
+                    result.appendChild(div1);
+    
+    
+                }
+    
+                }
+            };
+    
+            myRequest.open("GET", "albums.json", true);
+            myRequest.send();
+    
+            </script>
+
+                  <!-- Trigger the modal with a button -->
+                  <button type="button" name="button"  class="btn btn-primary" data-toggle="modal" data-target="#MyModal" id="AddSinger"><i class="fas fa-plus-circle"></i></button>
+                  <!-- Modal -->
+                  <div class="modal fade" id="MyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <h5 class="modal-title" id="exampleModalLabel">Fill the form</h5>
+                          <form action="/albums" method="POST">
+                            <div class="inputs">
+                            <input type="text" name="name"  placeholder="Singer">
+                            <input type="text" name="album" placeholder="Album's Name">
+                            <input type="text" name="image" placeholder="Album's Image">
+                          </div>
+                          <button type="submit" class="btn btn-primary">ADD NEW ALBUM</button>                            
+                          </form>
+
+                      </div>
+                    </div>
+                  </div>
+        </div>
+      </div>
+
+        <!-- end of contenu -->
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <!-- Footer -->
+      <footer>
+      <div class="row">
+        <div class="col">
+          <img src="img/logo.png" alt="" width="35px;">
+          <h1>MUSIC PARADISE</h1>
+          <p>©  2020| PRIVACY POLICY</p>
+        </div>
+        <div class="col">
+        <a href="#">/Add Singer</a>
+        </div>
+      </div>
+      </footer>
+      <!-- End of footer -->
+
+  </body>
+</html>

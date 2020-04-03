@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+body{
+  background-color: #CFD8DC;
+  font-family: 'Roboto Slab', serif;
+    color: #222431;
+}
+header{
+  margin: 10px 0 30px;
+  text-align: center;
+}
+header h1{
+  margin: 10px;
+  font-weight: bold;
+  letter-spacing: 4.8px;
+}
+header p{
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 4.8px;
+}
+.topmenu{
+  margin: 30px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.topmenu a{
+  font-size: 18px;
+  font-weight: 500;
+    text-decoration: none;
+    margin: 0px 30px;
+    color: #222431;
+}
+footer{
+  background-color: #2B2D3C;
+}
+footer .row{
+  margin: 0;
+  padding: 40px 100px;
+  color: #72758A;
+  display: flex;
+  align-items: center;
+}
+footer .row h1{
+  margin: 10px 0 5px;
+}
+footer .row p{
+  font-family: 'Roboto';
+}
+footer .row a{
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    color: #4EBBBE;
+}
+.btn-group{
+  display: none;
+}
+@media (max-width:800px) {
+  .btn-group{
+    display: block;
+  }
+  .btn-group button{
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #4EBBBE;
+  }
+  .btn-group button:hover{
+    background: none;
+    border: none;
+    color: #4EBBBE;
+  }
+  .btn-group button:focus{
+    outline: none;
+    background: none;
+    border: none;
+    color: #4EBBBE;
+  }
+  .mx-auto p{
+    display: none;
+  }
+  .mx-auto ul{
+    display: none;
+  }
+  .mx-auto{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+/* modallllll */
+.modal-content{
+  border-radius: 10px;
+  background-color: #222431;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputs{
+  text-align: center;
+  margin: 20px 0;
+}
+input{
+  margin: 10px 0;
+  border: none;
+  color: #222431;
+  width: 90%;
+  background: none;
+  background-color: #CFD8DC;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-family: "Inter";
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px black;
+
+}
+input:focus{
+  outline: none;
+}
+::placeholder {
+  color: #222431;
+  font-family: "Inter";
+  font-weight: 300;
+  letter-spacing: 1.4px;
+  opacity: 0.6;
+}
+.modal-content .btn{
+  background-color: #CFD8DC;
+  color: #222431;
+  border: none;
+  padding: 10px 20px;
+  box-shadow: 0 10px 30px black;
+  transition: 0.4s;
+}
+.modal-content .btn:hover{
+  background-color: #4EBBBE;
+  color: #CFD8DC;
+}
+#AddSinger{
+  background: none;
+  border: none;
+  font-size: 60px;
+  color: #4EBBBE;
+  position: fixed;
+  margin-top: 2%;
+  right: 5%;
+}

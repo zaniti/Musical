@@ -1,0 +1,46 @@
+.albums {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.all1 {
+    padding: 30px;
+
+}
+.all1 p {
+    color: white;
+}
+.btn {
+margin-left: 30px;
+color: #222431; 
+background-color: transparent;
+
+}
+.singer img {
+    height: 500px;
+    border-radius: 2%;
+}
+
+.singer  {
+    text-align: center;
+    color: #222431;
+    font-family: Montserrat;
+
+}
+.singer p{
+    font-weight: bold;
+    font-size: 20px;
+    color: #222431;
+
+}
+.singer h1{
+    font-size: 20px;
+}
+@media (max-width:800px) {
+ .btn {
+        margin-left: 80px;
+        color: #222431; 
+        background-color: transparent;
+        z-index: 999;
+        }
+    }

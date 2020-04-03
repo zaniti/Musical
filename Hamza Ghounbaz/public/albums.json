@@ -1,0 +1,28 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "name": "Adele",
+      "album": "Greatest Hits",
+      "image": "img/albums/Adele.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Freddie Mercury",
+      "album": "Mr. Bad Guy",
+      "image": "img/albums/fm.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Katty Perry",
+      "album": "Witness",
+      "image": "img/albums/katty.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Wiz Khalifa",
+      "album": "Blacc Hollywood",
+      "image": "img/albums/wiz-khalifa.jpg"
+    }
+  ]
+}
