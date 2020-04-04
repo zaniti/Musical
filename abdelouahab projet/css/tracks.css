@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+th, td {
+  padding: 0px;
+}
+.tracknum{
+  text-align: right;
+  font-size: 40px;
+}
+.playy{
+  background: none;
+  border: none;
+  color: #222431;
+  font-size: 40px;
+}
+.pausee{
+  display: none;
+  background: none;
+  border: none;
+  color: #222431;
+  font-size: 40px;
+}
+.tracklength{
+  font-size: 12px;
+}
+.trackname{
+  font-size: 20px;
+  font-family: 'Inter';
+}
+audio{
+  display: none;
+  position: absolute;
+  z-index: -999;
+}

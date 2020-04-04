@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+.custom_wr{
+  background-color: #222431;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+.custom_wr span, .custom_wr h6, .custom_wr p{
+  font-family: 'Roboto';
+  font-weight: 300;
+}
+.custom_wr a{
+  color: white;
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.item{
+  margin: 40px 0;
+}
+.custom_wr span{
+  font-family: 'Roboto Slab', serif;
+  transition: 0.6s;
+}
+.custom_wr h6{
+  margin: 20px;
+  font-weight: 500;
+}
+.custom_wr p{
+  color: #72758A;
+  margin: 0 20px 10px;
+  font-size: 15px;
+}
+.custom_wr:hover{
+  background-color: white;
+  color: #222431;
+}
+.custom_wr:hover h3, .custom_wr:hover  a{
+  color: #4EBBBE;
+}
+.custom_wr:hover span{
+  color: #222431;
+}
+.custom_wr a:hover{
+  color: #222431;
+  text-decoration: underline;
+}
+.custom_wr:hover hr{
+  color: #222431;
+}
+hr{
+  color: #72758A;
+  width: 50px;
+  border: 3px solid;
+  margin: 20px auto 5px;
+}
+.Singer{
+  margin-top: 30px;
+}
